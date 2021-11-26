@@ -1,0 +1,14 @@
+---
+framework: jest
+postMerge:
+  pattern:
+    - './src/**/*.spec.ts'
+preMerge:
+  pattern:
+    - './src/**/*.spec.ts'
+preRun:
+  - npm ci
+postRun:
+  - node --version
+  - node --version
+version: 2.0
